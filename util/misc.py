@@ -29,6 +29,7 @@ from torch import Tensor
 import torchvision
 if float(torchvision.__version__[:3]) < 0.5:
     import math
+    #Sửa lại hàm _NewEmptyTensorOp do torchvision bị lỗi khi dùng phiên bản <0.5
     class _NewEmptyTensorOp(torch.autograd.Function):
         @staticmethod
         def forward(ctx, x, new_shape):
