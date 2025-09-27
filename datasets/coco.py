@@ -158,6 +158,7 @@ def build(image_set, args):
     root = Path(args.coco_path)
     assert root.exists(), f'provided COCO path {root} does not exist'
     mode = 'instances'
+    # Thay đổi lại đường dẫn 
     PATHS = {
         "train": (root / "train", root / "train" / "_annotations.coco.json"),
         "val": (root / "valid", root / "valid" / "_annotations.coco.json"),
