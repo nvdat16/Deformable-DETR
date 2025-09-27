@@ -160,7 +160,7 @@ def build(image_set, args):
     mode = 'instances'
     PATHS = {
         "train": (root / "train", root / "train" / "_annotations.coco.json"),
-        "val": (root / "test", root / "test" / "_annotations.coco.json"),
+        "val": (root / "valid", root / "valid" / "_annotations.coco.json"),
     }
 
 
