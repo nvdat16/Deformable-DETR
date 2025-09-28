@@ -15,7 +15,7 @@ import torch.nn.functional as F
 from torch.autograd import Function
 from torch.autograd.function import once_differentiable
 
-from models.ops.modules import ms_deform_attn as MSDA
+import MultiScaleDeformableAttention as MSDA
 
 
 class MSDeformAttnFunction(Function):
